@@ -16,7 +16,7 @@ function App() {
   ])
 
   return (
-    <div>
+    <div className="space-y-4">
       <TaskForm onSubmit={(task) => setTasks([...tasks, task])} />
       <TaskList tasks={tasks} />
     </div>

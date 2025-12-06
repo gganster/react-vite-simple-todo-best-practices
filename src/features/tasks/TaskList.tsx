@@ -7,9 +7,12 @@ type TaskListProps = {
 
 export const TaskList = ({ tasks }: TaskListProps) => {
   return (
-    <div>
+    <div className="space-y-3">
       {tasks.map((task) => (
-        <TaskListItem key={task.id} task={task} />
+        <TaskListItem
+          key={task.id}
+          task={task}
+        />
       ))}
     </div>
   )

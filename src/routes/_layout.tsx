@@ -6,9 +6,12 @@ export const Route = createFileRoute('/_layout')({
 
 function RouteComponent() {
   return (
-    <div className="min-h-screen p-4">
+    <div className="min-h-screen px-4 py-8">
       <div className="max-w-4xl mx-auto">
-        <Outlet />
+        <h1 className="text-2xl font-bold">Todo List</h1>
+        <div className="space-y-4 mt-4">
+          <Outlet />
+        </div>
       </div>
     </div>
   )
