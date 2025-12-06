@@ -1,4 +1,5 @@
 import { Outlet, createFileRoute } from '@tanstack/react-router'
+import { Status } from '@/features/status/Status'
 
 export const Route = createFileRoute('/_layout')({
   component: RouteComponent,
@@ -10,6 +11,7 @@ function RouteComponent() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-2xl font-bold">Todo List</h1>
         <div className="space-y-4 mt-4">
+          <Status />
           <Outlet />
         </div>
       </div>
